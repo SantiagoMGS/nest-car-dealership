@@ -28,8 +28,10 @@ export class CarsController {
 
   @Post()
   createCar(@Body() body: any) {
-    this.carsService.createCar(body);
-    return body;
+    return {
+      message: 'Car created successfully',
+      car: body,
+    };
   }
 
   @Patch(':id')
