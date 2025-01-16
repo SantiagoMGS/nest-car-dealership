@@ -2,6 +2,8 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
 
+# Car Dealship
+
 ## Description
 
 Test app for learn [Nest](https://github.com/nestjs/nest)
@@ -23,6 +25,12 @@ $ yarn run start:dev
 
 # production mode
 $ yarn run start:prod
+```
+
+Populate DB
+
+```
+http://localhost:3000/seed
 ```
 
 ## Run tests
@@ -47,12 +55,4 @@ If you are looking for a cloud-based platform to deploy your NestJS application,
 ```bash
 $ yarn install -g mau
 $ mau deploy
-```
-
-# Car Dealship
-
-Populate DB
-
-```
-http://localhost:3000/seed
 ```
