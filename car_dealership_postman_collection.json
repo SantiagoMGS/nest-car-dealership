@@ -1,0 +1,314 @@
+{
+	"info": {
+		"_postman_id": "cc9b54cc-de18-4958-9f5a-6bf0e6af7658",
+		"name": "Nest Learn",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20192475",
+		"_collection_link": "https://hikari-inc.postman.co/workspace/Ginko_api~fd184ecc-f06c-40d4-a8d8-8a8acedfd806/collection/20192475-cc9b54cc-de18-4958-9f5a-6bf0e6af7658?action=share&source=collection_link&creator=20192475"
+	},
+	"item": [
+		{
+			"name": "Cars",
+			"item": [
+				{
+					"name": "GetAllCars",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/cars",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCars by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/cars/3a",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"3a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateCar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "brand",
+									"value": "Volvo",
+									"type": "text"
+								},
+								{
+									"key": "model",
+									"value": "XCC",
+									"type": "text"
+								},
+								{
+									"key": "Banano",
+									"value": "asdasd",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/cars",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCar",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "brand",
+									"value": "Toyota2",
+									"type": "text"
+								},
+								{
+									"key": "model",
+									"value": "XC40",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "id",
+									"value": "773f4200-389d-4b85-bff5-06867e927f11\"",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/cars/1860a14b-0b2e-48a3-88ef-255706801089",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"1860a14b-0b2e-48a3-88ef-255706801089"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3000/cars/9fa2d126-b11d-4fc4-9ca4-89f290b8788b",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"9fa2d126-b11d-4fc4-9ca4-89f290b8788b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Brands",
+			"item": [
+				{
+					"name": "GetAllBrands",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/brands",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetBrandById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3000/brands/fc6463c7-c0ae-4cfc-991b-008f5a0e5de1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands",
+								"fc6463c7-c0ae-4cfc-991b-008f5a0e5de1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateBrand",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Mazda",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/brands",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateBrand",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Toyota2",
+									"type": "text"
+								},
+								{
+									"key": "model",
+									"value": "XC40",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/brands/19c4f10f-ddda-4b56-a1a2-617d850f9cf2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands",
+								"19c4f10f-ddda-4b56-a1a2-617d850f9cf2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteBrand",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3000/brands/19c4f10f-ddda-4b56-a1a2-617d850f9cf2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands",
+								"19c4f10f-ddda-4b56-a1a2-617d850f9cf2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Seed",
+			"item": [
+				{
+					"name": "Execute Seed",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/seed",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"seed"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
